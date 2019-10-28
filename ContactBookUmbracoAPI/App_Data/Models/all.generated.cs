@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a4da20d00f2d92d4")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "74780e0813c72790")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.11")]
 
 
 // FILE: models.generated.cs
@@ -90,6 +90,294 @@ namespace Umbraco.Web.PublishedContentModels
 		public string EmployeePhone
 		{
 			get { return this.GetPropertyValue<string>("employeePhone"); }
+		}
+	}
+
+	// Mixin content Type 1062 with alias "companyDetails"
+	/// <summary>CompanyDetails</summary>
+	public partial interface ICompanyDetails : IPublishedContent
+	{
+		/// <summary>CompanyAddress</summary>
+		string CompanyAddress { get; }
+
+		/// <summary>CompanyName</summary>
+		string CompanyName { get; }
+
+		/// <summary>CompanyPhone</summary>
+		string CompanyPhone { get; }
+	}
+
+	/// <summary>CompanyDetails</summary>
+	[PublishedContentModel("companyDetails")]
+	public partial class CompanyDetails : PublishedContentModel, ICompanyDetails
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "companyDetails";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public CompanyDetails(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CompanyDetails, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// CompanyAddress
+		///</summary>
+		[ImplementPropertyType("companyAddress")]
+		public string CompanyAddress
+		{
+			get { return GetCompanyAddress(this); }
+		}
+
+		/// <summary>Static getter for CompanyAddress</summary>
+		public static string GetCompanyAddress(ICompanyDetails that) { return that.GetPropertyValue<string>("companyAddress"); }
+
+		///<summary>
+		/// CompanyName
+		///</summary>
+		[ImplementPropertyType("companyName")]
+		public string CompanyName
+		{
+			get { return GetCompanyName(this); }
+		}
+
+		/// <summary>Static getter for CompanyName</summary>
+		public static string GetCompanyName(ICompanyDetails that) { return that.GetPropertyValue<string>("companyName"); }
+
+		///<summary>
+		/// CompanyPhone
+		///</summary>
+		[ImplementPropertyType("companyPhone")]
+		public string CompanyPhone
+		{
+			get { return GetCompanyPhone(this); }
+		}
+
+		/// <summary>Static getter for CompanyPhone</summary>
+		public static string GetCompanyPhone(ICompanyDetails that) { return that.GetPropertyValue<string>("companyPhone"); }
+	}
+
+	/// <summary>CorporateHeadquarters</summary>
+	[PublishedContentModel("corporateHeadquarters")]
+	public partial class CorporateHeadquarters : PublishedContentModel, ICompanyDetails
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "corporateHeadquarters";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public CorporateHeadquarters(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CorporateHeadquarters, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// CompanyAddress
+		///</summary>
+		[ImplementPropertyType("companyAddress")]
+		public string CompanyAddress
+		{
+			get { return Umbraco.Web.PublishedContentModels.CompanyDetails.GetCompanyAddress(this); }
+		}
+
+		///<summary>
+		/// CompanyName
+		///</summary>
+		[ImplementPropertyType("companyName")]
+		public string CompanyName
+		{
+			get { return Umbraco.Web.PublishedContentModels.CompanyDetails.GetCompanyName(this); }
+		}
+
+		///<summary>
+		/// CompanyPhone
+		///</summary>
+		[ImplementPropertyType("companyPhone")]
+		public string CompanyPhone
+		{
+			get { return Umbraco.Web.PublishedContentModels.CompanyDetails.GetCompanyPhone(this); }
+		}
+	}
+
+	/// <summary>Company</summary>
+	[PublishedContentModel("company")]
+	public partial class Company : PublishedContentModel, ICompanyDetails
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "company";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Company(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Company, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// CompanyLocation
+		///</summary>
+		[ImplementPropertyType("companyLocation")]
+		public string CompanyLocation
+		{
+			get { return this.GetPropertyValue<string>("companyLocation"); }
+		}
+
+		///<summary>
+		/// CompanyAddress
+		///</summary>
+		[ImplementPropertyType("companyAddress")]
+		public string CompanyAddress
+		{
+			get { return Umbraco.Web.PublishedContentModels.CompanyDetails.GetCompanyAddress(this); }
+		}
+
+		///<summary>
+		/// CompanyName
+		///</summary>
+		[ImplementPropertyType("companyName")]
+		public string CompanyName
+		{
+			get { return Umbraco.Web.PublishedContentModels.CompanyDetails.GetCompanyName(this); }
+		}
+
+		///<summary>
+		/// CompanyPhone
+		///</summary>
+		[ImplementPropertyType("companyPhone")]
+		public string CompanyPhone
+		{
+			get { return Umbraco.Web.PublishedContentModels.CompanyDetails.GetCompanyPhone(this); }
+		}
+	}
+
+	/// <summary>CompanyLand</summary>
+	[PublishedContentModel("companyLand")]
+	public partial class CompanyLand : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "companyLand";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public CompanyLand(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CompanyLand, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Adress
+		///</summary>
+		[ImplementPropertyType("adress")]
+		public string Adress
+		{
+			get { return this.GetPropertyValue<string>("adress"); }
+		}
+
+		///<summary>
+		/// LandName
+		///</summary>
+		[ImplementPropertyType("landName")]
+		public string LandName
+		{
+			get { return this.GetPropertyValue<string>("landName"); }
+		}
+
+		///<summary>
+		/// Location
+		///</summary>
+		[ImplementPropertyType("location")]
+		public string Location
+		{
+			get { return this.GetPropertyValue<string>("location"); }
+		}
+
+		///<summary>
+		/// Phone
+		///</summary>
+		[ImplementPropertyType("phone")]
+		public string Phone
+		{
+			get { return this.GetPropertyValue<string>("phone"); }
+		}
+	}
+
+	/// <summary>Department</summary>
+	[PublishedContentModel("department")]
+	public partial class Department : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "department";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Department(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Department, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Person
+		///</summary>
+		[ImplementPropertyType("employeeList")]
+		public IEnumerable<IPublishedContent> EmployeeList
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("employeeList"); }
 		}
 	}
 
