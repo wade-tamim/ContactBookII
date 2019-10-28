@@ -376,3 +376,134 @@ System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. -
    vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
    vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 11:38:35,353 [P4036/D2/T32] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'John Doe' with Id '0' has been published.
+ 2019-10-28 11:38:41,654 [P4036/D2/T14] INFO  umbraco.content - Save Xml to file...
+ 2019-10-28 11:38:41,662 [P4036/D2/T14] INFO  umbraco.content - Saved Xml to file.
+ 2019-10-28 11:39:35,788 [P4036/D2/T54] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 11:44:39,813 [P4036/D2/T28] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 11:49:25,913 [P4036/D2/T11] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: joakiimm@hotmail.com, IP Address: ::1
+ 2019-10-28 11:49:43,835 [P4036/D2/T81] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 11:54:47,858 [P4036/D2/T113] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 11:59:51,874 [P4036/D2/T131] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 12:04:55,892 [P4036/D2/T140] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 12:09:32,337 [P4036/D2/T152] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username joakiimm@hotmail.com from IP address ::1
+ 2019-10-28 12:09:32,338 [P4036/D2/T152] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: joakiimm@hotmail.com logged in from IP address ::1
+ 2019-10-28 12:09:59,909 [P4036/D2/T146] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 12:11:18,703 [P4036/D2/T148] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Accounting' with Id '0' has been published.
+ 2019-10-28 12:11:24,768 [P4036/D2/T135] INFO  umbraco.content - Save Xml to file...
+ 2019-10-28 12:11:24,778 [P4036/D2/T135] INFO  umbraco.content - Saved Xml to file.
+ 2019-10-28 12:11:55,195 [P4036/D2/T152] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jane Doe' with Id '0' has been published.
+ 2019-10-28 12:12:01,407 [P4036/D2/T138] INFO  umbraco.content - Save Xml to file...
+ 2019-10-28 12:12:01,416 [P4036/D2/T138] INFO  umbraco.content - Saved Xml to file.
+ 2019-10-28 12:12:26,535 [P4036/D2/T144] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Janne Doe' with Id '0' has been published.
+ 2019-10-28 12:12:32,846 [P4036/D2/T138] INFO  umbraco.content - Save Xml to file...
+ 2019-10-28 12:12:32,854 [P4036/D2/T138] INFO  umbraco.content - Saved Xml to file.
+ 2019-10-28 12:13:09,113 [P4036/D2/T152] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pölse Marketing' with Id '0' has been published.
+ 2019-10-28 12:13:15,041 [P4036/D2/T152] INFO  umbraco.content - Save Xml to file...
+ 2019-10-28 12:13:15,050 [P4036/D2/T152] INFO  umbraco.content - Saved Xml to file.
+ 2019-10-28 12:13:49,373 [P4036/D2/T123] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gösta Doe' with Id '0' has been published.
+ 2019-10-28 12:13:55,617 [P4036/D2/T135] INFO  umbraco.content - Save Xml to file...
+ 2019-10-28 12:13:55,625 [P4036/D2/T135] INFO  umbraco.content - Saved Xml to file.
+ 2019-10-28 12:14:35,750 [P4036/D2/T137] INFO  umbraco.content - Save Xml to file...
+ 2019-10-28 12:14:35,757 [P4036/D2/T137] INFO  umbraco.content - Saved Xml to file.
+ 2019-10-28 12:15:03,923 [P4036/D2/T131] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2019-10-28 12:20:07,940 [P4036/D2/T115] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://localhost/umbraco").
+System.Net.Http.HttpRequestException: Ett fel uppstod när begäran skickades. ---> System.Net.WebException: Det går inte att ansluta till fjärrservern ---> System.Net.Sockets.SocketException: Det gick inte att göra en anslutning eftersom måldatorn aktivt nekade det 127.0.0.1:80
+   vid System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   vid System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   vid System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   vid System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Slut på stackspårning för interna undantag ---
+   vid System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   vid System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   vid Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
