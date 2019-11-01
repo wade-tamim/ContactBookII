@@ -198,6 +198,7 @@ Umbraco.Core.Persistence.Mappers.UmbracoEntityMapper, Umbraco.Core, Version=1.0.
 Umbraco.Core.Persistence.Mappers.UserMapper, Umbraco.Core, Version=1.0.6837.12031, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Models.Identity.IdentityModelMappings, Umbraco.Core, Version=1.0.6837.12031, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Auditing.AuditEventHandler, Umbraco.Core, Version=1.0.6837.12031, Culture=neutral, PublicKeyToken=null
+ContactBookUmbracoAPI.API.Controllers.CountriesController, ContactBookUmbracoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ContactBookUmbracoAPI.API.Controllers.DepartmentsController, ContactBookUmbracoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ContactBookUmbracoAPI.API.Controllers.EmployeesController, ContactBookUmbracoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.RestApi.Models.MediaModelMapper, Umbraco.RestApi, Version=1.0.5779.34030, Culture=neutral, PublicKeyToken=null
@@ -610,6 +611,7 @@ Umbraco.Web.Controllers.UmbLoginController, umbraco, Version=1.0.6837.12037, Cul
 
 Umbraco.Web.WebApi.UmbracoApiController
 
+ContactBookUmbracoAPI.API.Controllers.CountriesController, ContactBookUmbracoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ContactBookUmbracoAPI.API.Controllers.DepartmentsController, ContactBookUmbracoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ContactBookUmbracoAPI.API.Controllers.EmployeesController, ContactBookUmbracoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null

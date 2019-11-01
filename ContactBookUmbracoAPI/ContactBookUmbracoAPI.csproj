@@ -294,8 +294,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Controllers\CountriesController.cs" />
     <Compile Include="API\Controllers\DepartmentsController.cs" />
     <Compile Include="API\Controllers\EmployeesController.cs" />
+    <Compile Include="API\Models\CountryModel.cs" />
     <Compile Include="API\Models\DepartmentModel.cs" />
     <Compile Include="API\Models\EmployeeModel.cs" />
     <Compile Include="App_Start\UmbracoAuthTokenServerExtensions.cs" />
@@ -351,6 +353,7 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Countries\" />
     <Folder Include="Views\Departments\" />
     <Folder Include="Views\Employees\" />
   </ItemGroup>
