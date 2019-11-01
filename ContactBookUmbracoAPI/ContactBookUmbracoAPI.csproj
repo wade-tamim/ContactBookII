@@ -294,6 +294,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Controllers\DepartmentsController.cs" />
+    <Compile Include="API\Models\DepartmentModel.cs" />
     <Compile Include="App_Start\UmbracoAuthTokenServerExtensions.cs" />
     <Compile Include="App_Start\UmbracoCustomOwinStartup.cs" />
     <Compile Include="App_Start\UmbracoStandardOwinStartup.cs" />
@@ -345,6 +347,9 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Departments\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

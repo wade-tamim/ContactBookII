@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "74780e0813c72790")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.11")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "db5c17fbd977ae89")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -50,6 +50,33 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Company Number
+		///</summary>
+		[ImplementPropertyType("companyNumber")]
+		public string CompanyNumber
+		{
+			get { return this.GetPropertyValue<string>("companyNumber"); }
+		}
+
+		///<summary>
+		/// Department
+		///</summary>
+		[ImplementPropertyType("department")]
+		public string Department
+		{
+			get { return this.GetPropertyValue<string>("department"); }
+		}
+
+		///<summary>
+		/// Email
+		///</summary>
+		[ImplementPropertyType("email")]
+		public string Email
+		{
+			get { return this.GetPropertyValue<string>("email"); }
+		}
+
+		///<summary>
 		/// EmployeeAdress
 		///</summary>
 		[ImplementPropertyType("employeeAdress")]
@@ -59,21 +86,30 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// EmployeeName
+		/// First Name
 		///</summary>
-		[ImplementPropertyType("employeeName")]
-		public string EmployeeName
+		[ImplementPropertyType("firstName")]
+		public string FirstName
 		{
-			get { return this.GetPropertyValue<string>("employeeName"); }
+			get { return this.GetPropertyValue<string>("firstName"); }
 		}
 
 		///<summary>
-		/// EmployeePhone
+		/// Last Name
 		///</summary>
-		[ImplementPropertyType("employeePhone")]
-		public string EmployeePhone
+		[ImplementPropertyType("lastName")]
+		public string LastName
 		{
-			get { return this.GetPropertyValue<string>("employeePhone"); }
+			get { return this.GetPropertyValue<string>("lastName"); }
+		}
+
+		///<summary>
+		/// Phonenumber
+		///</summary>
+		[ImplementPropertyType("phonenumber")]
+		public IEnumerable<string> Phonenumber
+		{
+			get { return this.GetPropertyValue<IEnumerable<string>>("phonenumber"); }
 		}
 	}
 
@@ -294,39 +330,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Adress
-		///</summary>
-		[ImplementPropertyType("adress")]
-		public string Adress
-		{
-			get { return this.GetPropertyValue<string>("adress"); }
-		}
-
-		///<summary>
 		/// LandName
 		///</summary>
 		[ImplementPropertyType("landName")]
 		public string LandName
 		{
 			get { return this.GetPropertyValue<string>("landName"); }
-		}
-
-		///<summary>
-		/// Location
-		///</summary>
-		[ImplementPropertyType("location")]
-		public string Location
-		{
-			get { return this.GetPropertyValue<string>("location"); }
-		}
-
-		///<summary>
-		/// Phone
-		///</summary>
-		[ImplementPropertyType("phone")]
-		public string Phone
-		{
-			get { return this.GetPropertyValue<string>("phone"); }
 		}
 	}
 
@@ -356,12 +365,39 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Adress
+		///</summary>
+		[ImplementPropertyType("adress")]
+		public string Adress
+		{
+			get { return this.GetPropertyValue<string>("adress"); }
+		}
+
+		///<summary>
+		/// Department Name
+		///</summary>
+		[ImplementPropertyType("departmentName")]
+		public string DepartmentName
+		{
+			get { return this.GetPropertyValue<string>("departmentName"); }
+		}
+
+		///<summary>
 		/// Person
 		///</summary>
 		[ImplementPropertyType("employeeList")]
 		public IEnumerable<IPublishedContent> EmployeeList
 		{
 			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("employeeList"); }
+		}
+
+		///<summary>
+		/// Phone Number
+		///</summary>
+		[ImplementPropertyType("phoneNumber")]
+		public string PhoneNumber
+		{
+			get { return this.GetPropertyValue<string>("phoneNumber"); }
 		}
 	}
 
