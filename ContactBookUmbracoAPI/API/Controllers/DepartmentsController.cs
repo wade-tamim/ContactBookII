@@ -5,7 +5,7 @@ using Umbraco.Core.Services;
 
 namespace ContactBookUmbracoAPI.API.Controllers
 {
-    public class DepartmentController : Umbraco.Web.WebApi.UmbracoApiController
+    public class DepartmentsController : Umbraco.Web.WebApi.UmbracoApiController
     {
         // GET: Department
         public IEnumerable<DepartmentModel> GetAllDepartments()

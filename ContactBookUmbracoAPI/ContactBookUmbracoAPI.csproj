@@ -295,7 +295,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\Controllers\DepartmentsController.cs" />
+    <Compile Include="API\Controllers\EmployeesController.cs" />
     <Compile Include="API\Models\DepartmentModel.cs" />
+    <Compile Include="API\Models\EmployeeModel.cs" />
     <Compile Include="App_Start\UmbracoAuthTokenServerExtensions.cs" />
     <Compile Include="App_Start\UmbracoCustomOwinStartup.cs" />
     <Compile Include="App_Start\UmbracoStandardOwinStartup.cs" />
@@ -350,6 +352,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Departments\" />
+    <Folder Include="Views\Employees\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
