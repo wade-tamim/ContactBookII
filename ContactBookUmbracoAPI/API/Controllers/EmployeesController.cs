@@ -48,10 +48,8 @@ namespace ContactBookUmbracoAPI.API.Controllers
                             Id = emp.Id,
                             FirstName = emp.Properties[1].Value.ToString(),
                             LastName = emp.Properties[6].Value.ToString(),
+                            FullName = emp.Properties[1].Value.ToString() +" "+emp.Properties[6].Value.ToString(),
                             Department = department.Properties[3].Value.ToString(),
-                            //Email = emp.Properties[5].Value.ToString(),
-                            //Phone = emp.Properties[4].Value.ToString(),
-                            //Address = emp.Properties[2].Value.ToString(),
                             Country = id.Value,
                         });
                     }
